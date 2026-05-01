@@ -37,10 +37,6 @@ The application is optimized for specialized analysis in these domains:
 
 ## 🚀 Installation & Setup
 
-1. **Clone the Project**
-   ```bash
-   git clone [https://github.com/your-username/ai-data-analyst.git](https://github.com/your-username/ai-data-analyst.git)
-   cd ai-data-analyst
 Set Up Environment
 Create a .env file or enter your API key directly in the UI:
 
@@ -61,7 +57,7 @@ streamlit run app.py
 
 "What is the average cholesterol level for each RestingECG category?"
 
-👨‍💻 Developed By
+##👨‍💻 Developed By
 Yashawanth B R
 Cloud Data Analytics | Computer Science
 

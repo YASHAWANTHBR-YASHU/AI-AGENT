@@ -59,12 +59,15 @@ streamlit run app.py
 
 "What is the average cholesterol level for each RestingECG category?"
 
-##👨‍💻 Developed By
-Yashawanth B R
-Cloud Data Analytics | Computer Science
+---
 
-Reliability: Implemented a "Direct Route" prompt structure to minimize "Failed to call function" errors.
+## 👨‍💻 Developed By
 
-Author
-Yashawanth B R
-Data Analytics & Data Science Specialist
+**Yashawanth B R**  
+*Cloud Data Analytics | Computer Science*
+
+> **Reliability Note:** This system implements a custom **"Direct Route"** prompt structure. This architectural choice specifically minimizes "Failed to call function" errors and optimizes inference speed for real-time analysis.
+
+**Author:**  
+**Yashawanth B R**  
+*Data Analytics & Data Science Specialist*

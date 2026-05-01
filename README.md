@@ -37,11 +37,13 @@ The application is optimized for specialized analysis in these domains:
 
 ## 🚀 Installation & Setup
 
-Set Up Environment
-Create a .env file or enter your API key directly in the UI:
+# 🛠️ Installation & Setup
 
-Bash
+### 1. Set Up Environment
+Create a `.env` file or enter your API key directly in the UI:
+```bash
 GROQ_API_KEY=your_key_here
+
 Install Dependencies
 
 Bash

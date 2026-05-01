@@ -1,63 +1,72 @@
 # AI-AGENT
-📊 AI Real-Time Data Analyst
-An interactive, AI-powered web application that allows users to upload CSV data and receive instant insights paired with dynamic visualizations. This project leverages LLMs to translate natural language queries into SQL, providing a "chat-with-your-data" experience.
+# 📊 AI Real-Time Data Analyst
 
-✨ Key Features
-Dual-Dataset Analysis: Specialized support for healthcare and insurance data (e.g., insurance.csv and heart.csv).
+An advanced, AI-driven data exploration platform that transforms natural language into actionable insights. Upload CSVs and let the agent handle the SQL, logic, and visualization in real-time.
 
-Natural Language to SQL: Converts user questions into precise SQLite queries using Llama 3.1 8B via Groq.
+---
 
-Dynamic Visualizations: Automatically generates Plotly charts that match the AI's textual insights.
+## 🌟 Key Features
 
-Theme-Aware UI: Features a custom animated background and "Glassmorphism" UI that adapts to both Light and Dark modes.
+*   **⚡ Ultra-Fast Inference**: Powered by **Groq (Llama-3.1-8b-instant)** for near-instant responses.
+*   **🧠 Intelligent SQL Agent**: Automatically interprets complex schemas and handles joins, aggregations, and filtering.
+*   **🎭 Adaptive UI**: Custom **Glassmorphism** design with a background animation that supports both Light and Dark modes.
+*   **📈 Dynamic Visuals**: Auto-generates Plotly charts tailored to the specific query output.
+*   **🛡️ Production Ready**: Features robust error handling for API rate limits (429 errors) and database constraints.
 
-Rate-Limit Resilience: Built-in "Smart Wait" logic and retry mechanisms to handle high-traffic API requests.
+---
 
-🛠️ Tech Stack
-Frontend: Streamlit
+## 🛠️ Tech Stack
 
-AI Orchestration: LangChain (SQL Agent)
+| Category | Technology |
+| :--- | :--- |
+| **Frontend** | [Streamlit](https://streamlit.io/) |
+| **Orchestration** | [LangChain](https://www.langchain.com/) |
+| **Model** | [Groq (Llama 3.1)](https://groq.com/) |
+| **Database** | SQLite (In-Memory via SQLAlchemy) |
+| **Visuals** | [Plotly Express](https://plotly.com/python/) |
 
-Inference: Groq (Llama-3.1-8b-instant)
+---
 
-Data Handling: Pandas, SQLAlchemy (In-Memory SQLite)
+## 📂 Featured Datasets
 
-Charts: Plotly Express
+The application is optimized for specialized analysis in these domains:
+*   **Healthcare (`heart.csv`)**: Identifying cardiovascular risk factors and patient demographics.
+*   **Finance (`insurance.csv`)**: Analyzing cost drivers, BMI correlations, and regional insurance trends.
 
-🚀 Getting Started
-Prerequisites
-Python 3.8+
+---
 
-A Groq API Key
+## 🚀 Installation & Setup
 
-Installation
-Clone the repository:
+1. **Clone the Project**
+   ```bash
+   git clone [https://github.com/your-username/ai-data-analyst.git](https://github.com/your-username/ai-data-analyst.git)
+   cd ai-data-analyst
+Set Up Environment
+Create a .env file or enter your API key directly in the UI:
 
 Bash
-git clone https://github.com/your-username/ai-data-analyst.git
-cd ai-data-analyst
-Install dependencies:
+GROQ_API_KEY=your_key_here
+Install Dependencies
 
 Bash
-pip install streamlit pandas plotly sqlalchemy langchain-groq langchain-community
-Run the app:
+pip install -r requirements.txt
+Launch the Dashboard
 
 Bash
 streamlit run app.py
-📈 Example Queries
-“Compare the average insurance charges for smokers vs non-smokers.”
+💡 Example Prompts to Try
+"Show a bar chart of heart disease cases grouped by ChestPainType."
 
-“Show a bar chart of heart disease cases grouped by chest pain type.”
+"Compare the average insurance charges for smokers vs non-smokers."
 
-“What is the average BMI for each region?”
+"What is the average cholesterol level for each RestingECG category?"
 
-⚙️ Recent Optimizations
-Performance: Switched to llama-3.1-8b-instant for faster inference and lower token consumption.
-
-UI/UX: Replaced deprecated parameters with width='stretch' for future-proof Plotly rendering.
+👨‍💻 Developed By
+Yashawanth B R
+Cloud Data Analytics | Computer Science
 
 Reliability: Implemented a "Direct Route" prompt structure to minimize "Failed to call function" errors.
 
 Author
 Yashawanth B R
-Cloud Data Analytics & Computer Science Specialist
+Data Analytics & Data Science Specialist
